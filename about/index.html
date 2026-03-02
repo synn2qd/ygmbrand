@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>YGM — About</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+   <div class="top-glow" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav pill">
+      <a class="brand" href="../index.html#home" aria-label="YGM home">
+        <span class="brand-text">YGM</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../roster.html" class="nav-link">Roster</a>
+        <a href="../about.html" class="nav-link" is-active>About</a>
+        <a href="../contact.html" class="nav-link">Contact</a>
+        <a href="../index.html#live" class="nav-link">Live</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="https://x.com/ygmbrand" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
+          <span class="icon">X</span>
+        </a>
+        <a class="icon-btn" href="https://discord.gg/zEQugFgn9f" target="_blank" rel="noreferrer" aria-label="Discord">
+          <span class="icon">⌁</span>
+          <span class="icon-sub">Discord</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE 1 -->
+    <section class="section about-hero" id="about">
+      <div class="about-bg" aria-hidden="true">
+        <div class="sakura sakura-a"></div>
+        <div class="sakura sakura-b"></div>
+        <div class="grain"></div>
+      </div>
+
+      <div class="container">
+        <div class="about-hero-inner">
+          <div class="about-kicker reveal">
+            <span class="kicker-pill">About</span>
+            <span class="dot">•</span>
+            <span class="kicker">Brand</span>
+          </div>
+
+          <h1 class="about-title reveal" data-delay="90">YGM</h1>
+
+          <div class="about-subline reveal" data-delay="160">
+            <span class="about-subtag">BRAND</span>
+            <span class="about-subcopy">who we are</span>
+          </div>
+
+          <div class="about-stats reveal" data-delay="240">
+            <div class="stat-box">
+              <div class="stat-value">$10k+</div>
+              <div class="stat-label">Earned</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">10+</div>
+              <div class="stat-label">FNCS Grand Finals</div>
+            </div>
+          </div>
+
+          <div class="about-cta reveal" data-delay="320">
+            <a class="btn primary" href="#meaning">Meaning Behind YGM</a>
+            <a class="btn ghost" href="../index.html#live">Watch Live</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="section about-meaning" id="meaning">
+      <div class="meaning-bg" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Meaning Behind YGM</h2>
+          <p class="section-sub">Yearn. Grind. Manifest.</p>
+        </div>
+
+        <div class="meaning-grid">
+          <div class="meaning-card reveal">
+            <div class="meaning-tag">Yearn</div>
+            <p class="meaning-text">
+              Want it more. Not hype — hunger. The obsession to get better when nobody is watching.
+            </p>
+          </div>
+
+          <div class="meaning-card reveal" data-delay="90">
+            <div class="meaning-tag">Grind</div>
+            <p class="meaning-text">
+              Build the reps. Review the VODs. Fix what’s weak. Repeat until it’s automatic.
+            </p>
+          </div>
+
+          <div class="meaning-card reveal" data-delay="170">
+            <div class="meaning-tag">Manifest</div>
+            <p class="meaning-text">
+              Turn preparation into outcomes. Confidence comes from proof — and proof comes from work.
+            </p>
+          </div>
+        </div>
+
+        <div class="meaning-wide reveal" data-delay="250">
+          <p>
+            YGM is a disciplined esports brand focused on competitive results and community energy.
+            We’re building a home for players who move with intention: quiet, consistent, relentless.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> YGM</span>
+        <span class="footer-dot">•</span>
+        <span>Yearn. Grind. Manifest.</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="../app.js"></script>
+</body>
+</html>

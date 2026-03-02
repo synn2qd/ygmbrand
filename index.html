@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>YGM — Yearn. Grind. Manifest</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Top Glow -->
+  <div class="top-glow" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="nav pill">
+      <a class="brand" href="#home" aria-label="YGM home"><span class="brand-text">YGM</span></a>
+
+      <div class="nav-links">
+        <a href="#home" class="nav-link is-active">Home</a>
+        <a href="roster.html" class="nav-link">Roster</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="#live" class="nav-link">Live</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="https://x.com/ygmbrand" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
+          <span class="icon">X</span>
+        </a>
+        <a class="icon-btn" href="https://discord.gg/zEQugFgn9f" target="_blank" rel="noreferrer" aria-label="Discord">
+          <span class="icon">⌁</span>
+          <span class="icon-sub">Discord</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- HERO / PAGE 1 -->
+    <section id="home" class="section hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="sakura sakura-a"></div>
+        <div class="sakura sakura-b"></div>
+        <div class="sakura sakura-c"></div>
+        <div class="grain"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-kicker reveal">
+            <span class="kicker-pill">#ygmwin</span>
+            <span class="dot">•</span>
+            <span class="kicker">EST 2026</span>
+          </div>
+
+          <h1 class="hero-title reveal">Yearn. Grind. Manifest</h1>
+
+          <p class="hero-sub reveal">
+            A modern esports brand built on discipline, velocity, and community.
+            <span class="soft">Pink. White. Precision.</span>
+          </p>
+
+          <div class="hero-cta reveal">
+            <a class="btn primary" href="#spotlights">View Spotlights</a>
+            <a class="btn ghost" href="#live">Watch Live</a>
+          </div>
+
+          <div class="scroll-hint reveal" aria-hidden="true">
+            <div class="scroll-pill">
+              <span>Scroll</span>
+              <span class="arrow">↓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- PLAYER SPOTLIGHTS (MAIN PAGE ONLY) -->
+    <section id="spotlights" class="section main-spotlights">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Player Spotlights</h2>
+          <p class="section-sub">Latest announcements from YGM.</p>
+        </div>
+
+        <div class="main-spot-grid">
+          <article class="main-spot-card reveal">
+            <img src="assets/poster-zaire.jpg" alt="Zaire announcement">
+            <div class="main-spot-overlay">
+              <h3>YGM Welcomes <span>Zaire</span></h3>
+            </div>
+          </article>
+
+          <article class="main-spot-card reveal">
+            <img src="assets/poster-solvey.png" alt="Solvey announcement">
+            <div class="main-spot-overlay">
+              <h3>YGM Welcomes <span>Solvey</span></h3>
+            </div>
+          </article>
+
+          <article class="main-spot-card reveal" data-delay="120">
+            <img src="assets/poster-astral.jpg" alt="Astral announcement">
+            <div class="main-spot-overlay">
+              <h3>YGM Welcomes <span>Astral</span></h3>
+            </div>
+          </article>
+
+          <article class="main-spot-card is-new reveal" data-delay="180">
+            <img src="assets/poster-preston.png" alt="Preston announcement">
+            <div class="new-badge" aria-hidden="true">NEW</div>
+            <div class="main-spot-overlay">
+              <h3>YGM Welcomes <span>Preston</span></h3>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- PAGE 2 / LIVE -->
+    <section id="live" class="section live">
+      <div class="live-bg" aria-hidden="true">
+        <div class="torii"></div>
+        <div class="gridlines"></div>
+        <div class="grain"></div>
+      </div>
+
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">YGM Live</h2>
+          <p class="section-sub">Streams, VOD vibes, and offline profiles.</p>
+        </div>
+
+        <div class="live-layout">
+          <div class="live-player reveal">
+            <div class="live-topbar">
+              <div class="live-dot"></div><div class="live-dot"></div><div class="live-dot"></div>
+              <span class="live-label" id="liveLabel">twitch.tv/solveyfn</span>
+            </div>
+
+            <!-- Twitch embed -->
+            <div class="embed">
+              <!-- NOTE: Twitch requires a "parent" parameter matching your domain.
+                   For local testing, this uses 'localhost'. Replace with your domain when you deploy. -->
+              <iframe
+                id="twitch-embed"
+                data-channel="solveyfn"
+                title="Twitch stream"
+                height="100%"
+                width="100%"
+                allowfullscreen="true"
+                allow="autoplay; fullscreen"
+                scrolling="no"
+                frameborder="0">
+              </iframe>
+            </div>
+
+            <div class="live-footer">
+              <a class="btn primary small" href="https://www.twitch.tv/solveyfn" id="openTwitch" target="_blank" rel="noreferrer">Open on Twitch</a>
+              <span class="hint">The embed auto-detects your domain and sets Twitch <b>parent</b> correctly (supports ygmbrand.org + localhost).</span>
+            </div>
+          </div>
+
+          
+          <aside class="live-side">
+            <div class="member-card reveal is-active" data-channel="solveyfn" data-label="twitch.tv/solveyfn" data-url="https://www.twitch.tv/solveyfn">
+              <div class="member-top">
+                <div class="avatar">S</div>
+                <div>
+                  <div class="member-name">Solvey</div>
+                  <div class="member-role">Fortnite • Creator / Competitor</div>
+                </div>
+              </div>
+              <div class="member-actions">
+                <a class="btn ghost small" href="https://www.twitch.tv/solveyfn" target="_blank" rel="noreferrer">Profile</a>
+                <a class="btn primary small" href="#spotlights">Spotlight</a>
+              </div>
+              <div class="member-note">
+                Click to switch the live player.
+              </div>
+            </div>
+
+            <div class="member-card reveal" data-delay="80" data-channel="astrlfnt" data-label="twitch.tv/astrlfnt" data-url="https://www.twitch.tv/astrlfnt">
+              <div class="member-top">
+                <div class="avatar">A</div>
+                <div>
+                  <div class="member-name">Astral</div>
+                  <div class="member-role">Fortnite • Competitor</div>
+                </div>
+              </div>
+              <div class="member-actions">
+                <a class="btn ghost small" href="https://www.twitch.tv/astrlfnt" target="_blank" rel="noreferrer">Profile</a>
+                <a class="btn primary small" href="#spotlights">Spotlight</a>
+              </div>
+              <div class="member-note">
+                Click to switch the live player.
+              </div>
+            </div>
+
+            <div class="member-card reveal" data-delay="160" data-channel="preston4321_" data-label="twitch.tv/preston4321_" data-url="https://www.twitch.tv/preston4321_">
+              <div class="member-top">
+                <div class="avatar">P</div>
+                <div>
+                  <div class="member-name">Preston</div>
+                  <div class="member-role">Fortnite • Competitor</div>
+                </div>
+              </div>
+              <div class="member-actions">
+                <a class="btn ghost small" href="https://www.twitch.tv/preston4321_" target="_blank" rel="noreferrer">Profile</a>
+                <a class="btn primary small" href="#spotlights">Spotlight</a>
+              </div>
+              <div class="member-note">
+                Click to switch the live player.
+              </div>
+            </div>
+
+            <div class="coming-card reveal" data-delay="240">
+              <div class="coming-title">More members coming</div>
+              <p class="coming-sub">Add new Twitch links and we’ll expand the grid next.</p>
+              <div class="chips">
+                <span class="chip">Pink / White</span>
+                <span class="chip">Japan aesthetic</span>
+                <span class="chip">Smooth motion</span>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> YGM</span>
+        <span class="footer-dot">•</span>
+        <span>Yearn. Grind. Manifest.</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

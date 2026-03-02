@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>YGM — Contact</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+   <div class="top-glow" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav pill">
+      <a class="brand" href="../index.html#home" aria-label="YGM home">
+        <span class="brand-text">YGM</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="../index.html#home" class="nav-link">Home</a>
+        <a href="../roster.html" class="nav-link">Roster</a>
+        <a href="../about.html" class="nav-link">About</a>
+        <a href="../contact.html" class="nav-link is-active">Contact</a>
+        <a href="../index.html#live" class="nav-link">Live</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="https://x.com/ygmbrand" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
+          <span class="icon">X</span>
+        </a>
+        <a class="icon-btn" href="https://discord.gg/zEQugFgn9f" target="_blank" rel="noreferrer" aria-label="Discord">
+          <span class="icon">⌁</span>
+          <span class="icon-sub">Discord</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section contact-hero" id="contact">
+      <div class="contact-bg" aria-hidden="true">
+        <div class="sakura sakura-a"></div>
+        <div class="sakura sakura-b"></div>
+        <div class="grain"></div>
+      </div>
+
+      <div class="container">
+        <div class="contact-inner">
+          <div class="hero-kicker reveal">
+            <span class="kicker-pill">Contact</span>
+            <span class="dot">•</span>
+            <span class="kicker">YGM Brand</span>
+          </div>
+
+          <h1 class="contact-title reveal" data-delay="90">CONTACT</h1>
+          <p class="contact-sub reveal" data-delay="160">Partnerships, team inquiries, and collabs.</p>
+
+          <div class="contact-grid">
+            <form class="contact-card reveal" data-delay="240" onsubmit="event.preventDefault(); alert('Sent! (Hook this to your email service when ready)');">
+              <div class="field">
+                <label>Name</label>
+                <input type="text" placeholder="Your name" required>
+              </div>
+              <div class="field">
+                <label>Email</label>
+                <input type="email" placeholder="you@email.com" required>
+              </div>
+              <div class="field">
+                <label>Message</label>
+                <textarea rows="5" placeholder="What are you reaching out about?" required></textarea>
+              </div>
+
+              <div class="contact-actions">
+                <button class="btn primary" type="submit">Send</button>
+                <a class="btn ghost" href="https://discord.gg/zEQugFgn9f" target="_blank" rel="noreferrer">Join Discord</a>
+              </div>
+
+              <div class="mini-note">
+                Tip: when you deploy, connect this form to Formspree / Web3Forms / your backend.
+              </div>
+            </form>
+
+            <aside class="contact-card side reveal" data-delay="320">
+              <div class="side-title">Fast links</div>
+              <p class="side-sub">If you want a quick response, hit us on socials.</p>
+              <div class="side-links">
+                <a class="btn primary small" href="https://x.com/ygmbrand" target="_blank" rel="noreferrer">X / @ygmbrand</a>
+                <a class="btn ghost small" href="https://discord.gg/zEQugFgn9f" target="_blank" rel="noreferrer">Discord Invite</a>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="side-title">What to include</div>
+              <ul class="side-list">
+                <li>Who you are + org/company</li>
+                <li>What you want to do</li>
+                <li>Timeline + budget (if relevant)</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> YGM</span>
+        <span class="footer-dot">•</span>
+        <span>Yearn. Grind. Manifest.</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="../app.js"></script>
+</body>
+</html>
